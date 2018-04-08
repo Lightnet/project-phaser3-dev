@@ -5,7 +5,13 @@ Created by: Lightnet
 License: MIT
 
 # Information:
- Blank project and prototype development build.
+ Blank project and prototype development build. The project is design to bundle script together into one file. Note this babel 6.26.0 that compile to javascript for html to run.
+
+```
+require('phaser/dist/phaser');
+
+```
+This is from phaser package for easy to access and export to bundle file.
 
 # Layout:
 ```
