@@ -20,3 +20,9 @@ License: MIT
   - gulpfile.js (auto build script tasks)
   - index.html (default page)
 ```
+
+# Notes:
+ * this.load.setBaseURL('http://localhost:3000'); //you can change until this project is set for default settings is not production.
+
+# Links:
+ * https://phaser.io/tutorials/getting-started-phaser3/part5

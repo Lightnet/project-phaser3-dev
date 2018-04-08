@@ -136,8 +136,12 @@ gulp.task('watch', () =>{
 
     //gulp.watch(['src/common/*.js','src/server/*.js','src/client/*.js'],['build']);
     gulp.watch(['./src/client/*.js'],['build']);
+
+    gulp.watch(['./main.js'],['main-script']);
     gulp.watch(['./index.html'],['html']);
     gulp.watch(['./assets/sass/*.scss'],['sass']);
+    gulp.watch(['./assets/**/*.*'],['assets']);
+
 });
 
 //copy html
@@ -147,7 +151,7 @@ gulp.task('html',[],function(){
 });
 
 gulp.task('assets',[],function(){
-    return gulp.src(['./assets/*.*'])    
+    return gulp.src(['./assets/**/*.*','!assets/**/*.scss'])    
     .pipe(gulp.dest('./public/assets'));
 });
 
@@ -169,8 +173,9 @@ gulp.task('serve',[], function() {
         browserSync.reload();
     });
     // Note: try wrapping in a function if getting an error like `TypeError: Bad argument at TypeError (native) at ChildProcess.spawn`
-    gulp.watch('main.js', function() {
+    gulp.watch('dist/main.js', function() {
         server.start.bind(server)();
+        browserSync.reload();
     });
 });
 
