@@ -175,7 +175,7 @@ gulp.task('serve',[], function() {
     // Note: try wrapping in a function if getting an error like `TypeError: Bad argument at TypeError (native) at ChildProcess.spawn`
     gulp.watch('dist/main.js', function() {
         server.start.bind(server)();
-        browserSync.reload();
+        //browserSync.reload();
     });
 });
 
