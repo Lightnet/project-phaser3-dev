@@ -1,6 +1,6 @@
-console.log("test");
-
-require('phaser/dist/phaser');
+//console.log("test");
+//require('phaser/dist/phaser');
+require('phaser/dist/phaser.min');
 /*
 var config = {
     type: Phaser.AUTO,

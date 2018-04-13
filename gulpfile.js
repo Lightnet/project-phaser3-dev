@@ -62,9 +62,9 @@ gulp.task('scr-client-build',  function(cb) {
         "babelrc": false,
         "presets": [
                 ["env", {
-                  "targets": {
-                    "node": "current"
-                  }
+                  //"targets": {
+                    //"node": "current"
+                  //}
                 }]
               ]
         ,"plugins": [["transform-runtime"]
