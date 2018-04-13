@@ -75,8 +75,6 @@ gulp.task('scr-client-build',  function(cb) {
               ,["module-resolver", {
                 "root": ["./dist/src"],
                 "alias": {
-                  //"lance": "./node_modules/lance-gg/es5",
-                  //"lance-gg": "./node_modules/lance-gg/es5"
                 }
               }]
         ]

@@ -1,20 +1,17 @@
 {
-    "presets": [
-            ["env", {
-                "targets": {
-                "node": "current"
-                }
-            }]
-            ]
-    ,"plugins": [["transform-runtime"]
-            ,["transform-define", {
-            "process.env.NODE_ENV": "production",
-            "typeof window": "object"
-            }]
-            ,["module-resolver", {
-            "root": ["./dist/src"],
-            "alias": {
-            }
-            }]
-    ]
+	"presets": [
+			["env"]
+		  ]
+	,"plugins": [["transform-runtime"]
+		,["transform-define", {
+			"process.env.NODE_ENV": "production",
+			"typeof window": "object"
+		}]
+		,["module-resolver", {
+			"root": ["./dist/src"],
+			"alias": {
+			  
+			}
+		  }]
+	]
 }

@@ -29,6 +29,7 @@ This is from phaser package for easy to access and export to bundle file.
 
 # Notes:
  * this.load.setBaseURL('http://localhost:3000'); //you can change until this project is set for default settings is not production.
+ * The Babel javascript config file .babelrc and gulpfile.js has two since one is for node and other is browser setting builds.
 
 # Links:
  * https://phaser.io/tutorials/getting-started-phaser3/part5
